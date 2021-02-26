@@ -10,7 +10,9 @@ app.use(express.json());
 app.use('/api/system',require('./routes/system'));
 
 
-
+app.get('/api/details',(req,res)=>{
+    res.send("Hello")
+})
 app.listen(5000, () => {
     console.log("Server has started on port")
 });
